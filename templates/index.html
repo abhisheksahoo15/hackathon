@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon 2025 - Dynamic Charts</title>
+    <link rel="stylesheet" href="/static/index.css">
+    <script src="/static/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">🚀 Hackathon 2025</div>
+        <nav>
+            <ul>
+                <li><a href="#charts">Charts</a></li>
+                <li><a href="#prizes">Prizes</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hackathon 2025 - Live Stats 📊</h1>
+            <p>Track dynamic updates of enrollments and performance metrics in real time!</p>
+        </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section id="charts" class="charts-section">
+        <h2>📈 Live Stats Overview</h2>
+        <div class="chart-cards">
+            <!-- Line Chart Card -->
+            <div class="chart-card">
+                <h3>Dynamic Enrollments (Line Chart)</h3>
+                <canvas id="lineChart"></canvas>
+            </div>
+            <!-- Bar Chart Card -->
+            <div class="chart-card">
+                <h3>Category Distribution (20 Bins)</h3>
+                <canvas id="barChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes Section -->
+    <section id="prizes" class="prizes">
+        <h2>🏆 Exciting Prizes Await You!</h2>
+        <ul>
+            <li>💰 Cash Prizes worth $5000</li>
+            <li>📜 Confirmed Certificates for All Participants</li>
+            <li>🎉 Exclusive Swag Kits for Top Teams</li>
+        </ul>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="register">
+        <h2>Ready to Innovate? 🚀</h2>
+        <button class="cta-btn">Register Now</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Hackathon Inc. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
