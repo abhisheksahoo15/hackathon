@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #1e1e2f;
+    color: #eaeaea;
+}
+
+/* Header */
+.header {
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.header nav ul li a {
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Charts Section */
+.charts-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.chart-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.chart-card {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 45%;
+    min-width: 300px;
+    text-align: center;
+}
+
+.chart-card h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* Prizes Section */
+.prizes {
+    padding: 40px 20px;
+    background-color: #2a2a3c;
+    text-align: center;
+}
+
+.prizes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.prizes li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #eaeaea;
+}
