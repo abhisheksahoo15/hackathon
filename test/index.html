@@ -3,57 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prizes & Certificates | Hackathon</title>
+    <title>Hackathon Landing Page</title>
     <link rel="stylesheet" href="test.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">Hackathon</div>
+        <div class="logo">HackathonX</div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="sponsors.html">Sponsors</a></li>
-            <li><a href="prizes.html" class="active">Prizes</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="register-btn">Register Now</button>
     </nav>
 
-    <!-- Prizes Section -->
-    <section class="prizes">
-        <h1>🏆 Exciting Prizes & Recognition 🎉</h1>
-        <p>Compete, innovate, and win amazing rewards!</p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Code. Innovate. Win.</h1>
+        <p>The Ultimate Hackathon Experience.</p>
+        <button class="cta-btn">Join Now</button>
+    </header>
 
-        <div class="prize-container">
-            <div class="prize-card gold">
-                <h2>🥇 First Prize</h2>
-                <p>$5,000 + Trophy + Certificate</p>
-            </div>
-            <div class="prize-card silver">
-                <h2>🥈 Second Prize</h2>
-                <p>$3,000 + Medal + Certificate</p>
-            </div>
-            <div class="prize-card bronze">
-                <h2>🥉 Third Prize</h2>
-                <p>$1,500 + Medal + Certificate</p>
-            </div>
-            <div class="prize-card">
-                <h2>🏅 Special Awards</h2>
-                <p>Best Innovation, Best UI/UX & More</p>
-            </div>
+    <!-- Countdown Timer Section -->
+<section class="countdown">
+    <h2>Hackathon Starts In</h2>
+    <div class="timer">
+        <div class="time-box">
+            <span id="days">00</span>
+            <p>Days</p>
+        </div>
+        <div class="time-box">
+            <span id="hours">00</span>
+            <p>Hours</p>
+        </div>
+        <div class="time-box">
+            <span id="minutes">00</span>
+            <p>Minutes</p>
+        </div>
+        <div class="time-box">
+            <span id="seconds">00</span>
+            <p>Seconds</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Counter Section -->
+    <section class="counter">
+        <div class="counter-item">
+            <span id="participants">0</span>
+            <p>Participants</p>
+        </div>
+        <div class="counter-item">
+            <span id="projects">0</span>
+            <p>Projects Submitted</p>
+        </div>
+        <div class="counter-item">
+            <span id="sponsors">0</span>
+            <p>Sponsors</p>
         </div>
     </section>
 
-    <!-- Certificates Section -->
-    <section class="certificates">
-        <h1>📜 Certificates for All Participants</h1>
-        <p>Every participant will receive a digital certificate of participation.</p>
-        <img src="certificate.png" alt="Sample Certificate">
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors">
+        <h2>Our Sponsors</h2>
+        <div class="sponsor-logos">
+            <img src="sponsor1.png" alt="Sponsor 1">
+            <img src="sponsor2.png" alt="Sponsor 2">
+            <img src="sponsor3.png" alt="Sponsor 3">
+        </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 HackathonX. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>

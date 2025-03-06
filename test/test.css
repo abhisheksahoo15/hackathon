@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f3f3f3;
     text-align: center;
+    background-color: #f3f3f3;
 }
 
 /* Navbar */
@@ -28,10 +28,10 @@ body {
     color: #ff4500;
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
-    padding: 0;
 }
 
 .nav-links li {
@@ -42,78 +42,166 @@ body {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+/* Mobile Navigation */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Register Button */
+.register-btn {
     background-color: #ff4500;
     color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
 }
 
-/* Prizes Section */
-.prizes {
-    padding: 100px 20px;
+/* Hero Section */
+.hero {
     background: linear-gradient(to right, #ff4500, #ff6600);
     color: white;
+    padding: 100px 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.prizes h1 {
-    font-size: 36px;
+.cta-btn {
+    background-color: white;
+    color: #ff4500;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
 
-.prize-container {
+/* Countdown Timer */
+.countdown {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.timer {
     display: flex;
     justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.prize-card {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.prize-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.gold { border-top: 5px solid gold; }
-.silver { border-top: 5px solid silver; }
-.bronze { border-top: 5px solid #cd7f32; }
-
-/* Certificates Section */
-.certificates {
-    padding: 50px 20px;
-    background-color: white;
-}
-
-.certificates img {
-    width: 80%;
-    max-width: 500px;
     margin-top: 20px;
 }
 
+.time-box {
+    background-color: #ff4500;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90px;
+    text-align: center;
+}
+
+.time-box span {
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+}
+
+.time-box p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Counter Section */
+.counter {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.counter-item {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.counter-item span {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff4500;
+}
+
+/* Sponsors Section */
+.sponsors {
+    padding: 50px 20px;
+}
+
+.sponsor-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.sponsor-logos img {
+    width: 100px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
 /* Responsive Design */
-@media (max-width: 900px) {
-    .prize-container {
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .counter {
         flex-direction: column;
         align-items: center;
     }
 }
 
-@media (max-width: 600px) {
-    .nav-links {
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 10px;
+    }
+
+    .timer {
         flex-direction: column;
-        margin-top: 10px;
+        align-items: center;
+    }
+
+    .sponsor-logos {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     }
 }
