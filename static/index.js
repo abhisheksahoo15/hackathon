@@ -60,3 +60,9 @@ setInterval(updateCountdown, 1000);
 
 // Initialize countdown on page load
 updateCountdown();
+
+
+// Dark Mode Toggle
+document.getElementById("dark-mode-toggle").addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
