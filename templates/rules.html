@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Guidelines | Hackathon</title>
+    <link rel="stylesheet" href="submission.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Hackathon</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="prizes.html">Prizes</a></li>
+            <li><a href="submission.html" class="active">Submission</a></li>
+        </ul>
+    </nav>
+
+    <!-- Submission Guidelines -->
+    <section class="submission-guidelines">
+        <h1>📜 Submission Guidelines</h1>
+        <ul>
+            <li>🔹 Submissions must be hosted on a GitHub repository.</li>
+            <li>🔹 Include a README file explaining the project, technologies, and setup instructions.</li>
+            <li>🔹 Provide a demo video (max 5 minutes) explaining the project's working.</li>
+            <li>🔹 Ensure that the submission is original and adheres to ethical coding standards.</li>
+            <li>🔹 No plagiarism! All entries must be unique.</li>
+            <li>🔹 The deadline for submissions is April 10, 2025. No late entries will be accepted.</li>
+        </ul>
+    </section>
+
+    <!-- File Upload Section -->
+    <section class="upload-section">
+        <h1>📤 Submit Your Project</h1>
+        <form id="submissionForm">
+            <input type="text" id="team-name" placeholder="Enter Your Team Name" required>
+            <input type="url" id="repo-link" placeholder="GitHub Repository URL" required>
+            <input type="url" id="demo-link" placeholder="Demo Video URL" required>
+            <input type="file" id="upload-file" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="submission-status"></p>
+    </section>
+
+    <script src="submission.js"></script>
+</body>
+</html>
