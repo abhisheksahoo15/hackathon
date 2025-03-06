@@ -205,3 +205,50 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     }
 }
+
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .nav-links a {
+    color: white;
+}
+
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    padding: 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.dark-mode #dark-mode-toggle {
+    background: #ffffff;
+    color: #000;
+}
+
+
+/* countdouwn timer */
+.dark-mode .countdown {
+    background-color: #222;
+}
+
+.dark-mode .counter {
+    background-color: #1e1e1e;
+}
+
+
+.dark-mode footer {
+    background-color: #000;
+}

@@ -31,9 +31,7 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     });
 });
 
-
-
-// Set the Hackathon start date (YYYY, MM - 1, DD, HH, MM, SS)
+// Countdown Timer
 const hackathonStartDate = new Date(2025, 3, 10, 10, 0, 0).getTime();
 
 function updateCountdown() {
@@ -41,22 +39,17 @@ function updateCountdown() {
     const timeLeft = hackathonStartDate - now;
 
     if (timeLeft > 0) {
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-        document.getElementById("days").innerText = days;
-        document.getElementById("hours").innerText = hours;
-        document.getElementById("minutes").innerText = minutes;
-        document.getElementById("seconds").innerText = seconds;
-    } else {
-        document.querySelector(".countdown").innerHTML = "<h2>Hackathon Has Started!</h2>";
+        document.getElementById("days").innerText = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        document.getElementById("hours").innerText = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        document.getElementById("minutes").innerText = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        document.getElementById("seconds").innerText = Math.floor((timeLeft % (1000 * 60)) / 1000);
     }
 }
 
-// Update countdown every second
 setInterval(updateCountdown, 1000);
-
-// Initialize countdown on page load
 updateCountdown();
+
+// Dark Mode Toggle
+document.getElementById("dark-mode-toggle").addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
